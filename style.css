@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0f172a; /* 深色底色，與網頁外部融為一體 */
+  overflow: hidden;          /* 隱藏捲軸，確保遊戲體驗流暢 */
+  
+  /* 讓 p5.js 畫布在網頁視窗中水平、垂直完全置中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  display: block;            /* 移除畫布下方預設的微小空白隙縫 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* 為網頁中央的遊戲畫布加上精緻陰影 */
+  border-radius: 4px;        /* 輕微圓角 */
+}
